@@ -551,50 +551,6 @@ Text Label 6150 1050 0    50   ~ 0
 col2
 Text Label 6600 1050 0    50   ~ 0
 col3
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 60A654B7
-P 1300 2800
-F 0 "H1" H 1400 2846 50  0000 L CNN
-F 1 "MountingHole" H 1400 2755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 1300 2800 50  0001 C CNN
-F 3 "~" H 1300 2800 50  0001 C CNN
-	1    1300 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 60A66FD9
-P 1300 3000
-F 0 "H2" H 1400 3046 50  0000 L CNN
-F 1 "MountingHole" H 1400 2955 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 1300 3000 50  0001 C CNN
-F 3 "~" H 1300 3000 50  0001 C CNN
-	1    1300 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 60A6727E
-P 1300 3200
-F 0 "H3" H 1400 3246 50  0000 L CNN
-F 1 "MountingHole" H 1400 3155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 1300 3200 50  0001 C CNN
-F 3 "~" H 1300 3200 50  0001 C CNN
-	1    1300 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 60A67B53
-P 1300 3400
-F 0 "H4" H 1400 3446 50  0000 L CNN
-F 1 "MountingHole" H 1400 3355 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 1300 3400 50  0001 C CNN
-F 3 "~" H 1300 3400 50  0001 C CNN
-	1    1300 3400
-	1    0    0    -1  
-$EndComp
 Text Label 900  2250 0    50   ~ 0
 row3
 Text Label 900  2150 0    50   ~ 0

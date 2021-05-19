@@ -1,5 +1,5 @@
 (fp_lib_table
   (lib (name MX_Only)(type KiCad)(uri C:/Users/tyler/Documents/GitHub/keypad-prototype/MX_Alps_Hybrid.pretty/MX_Only.pretty)(options "")(descr ""))
   (lib (name random-keyboard-parts)(type KiCad)(uri C:/Users/tyler/Documents/GitHub/keypad-prototype/random-keyboard-parts.pretty)(options "")(descr ""))
-  (lib (name freetronics_footprints)(type KiCad)(uri ${KIPRJMOD}/freetronics_kicad_library/freetronics_footprints.pretty)(options "")(descr ""))
+  (lib (name joystick)(type KiCad)(uri ${KIPRJMOD}/2-axis-joystick-breakout-board-with-mounting-holes/joystick.pretty)(options "")(descr ""))
 )
