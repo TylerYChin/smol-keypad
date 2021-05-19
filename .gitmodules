@@ -7,3 +7,6 @@
 [submodule "freetronics_kicad_library"]
 	path = freetronics_kicad_library
 	url = https://github.com/freetronics/freetronics_kicad_library
+[submodule "2-axis-joystick-breakout-board-with-mounting-holes"]
+	path = 2-axis-joystick-breakout-board-with-mounting-holes
+	url = https://github.com/adafruit/2-axis-joystick-breakout-board-with-mounting-holes
