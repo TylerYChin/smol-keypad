@@ -10,3 +10,6 @@
 [submodule "2-axis-joystick-breakout-board-with-mounting-holes"]
 	path = 2-axis-joystick-breakout-board-with-mounting-holes
 	url = https://github.com/adafruit/2-axis-joystick-breakout-board-with-mounting-holes
+[submodule "keyswitches.pretty"]
+	path = keyswitches.pretty
+	url = https://github.com/daprice/keyswitches.pretty
