@@ -4,6 +4,3 @@
 [submodule "random-keyboard-parts.pretty"]
 	path = random-keyboard-parts.pretty
 	url = https://github.com/ai03-2725/random-keyboard-parts.pretty
-[submodule "SparkFun-Kicad-Libraries"]
-	path = SparkFun-Kicad-Libraries
-	url = https://github.com/benwis/SparkFun-Kicad-Libraries
