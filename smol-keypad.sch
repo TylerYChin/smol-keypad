@@ -551,4 +551,36 @@ Text Label 6150 1050 0    50   ~ 0
 col2
 Text Label 6600 1050 0    50   ~ 0
 col3
+Text Label 950  2250 0    50   ~ 0
+row3
+Text Label 950  2150 0    50   ~ 0
+row2
+Text Label 950  2050 0    50   ~ 0
+row1
+Text Label 950  1950 0    50   ~ 0
+row0
+Wire Wire Line
+	950  1950 1150 1950
+Wire Wire Line
+	950  2050 1150 2050
+Wire Wire Line
+	950  2150 1150 2150
+Wire Wire Line
+	950  2250 1150 2250
+Text Label 950  1850 0    50   ~ 0
+col0
+Text Label 950  1750 0    50   ~ 0
+col1
+Text Label 950  1650 0    50   ~ 0
+col2
+Text Label 950  1550 0    50   ~ 0
+col3
+Wire Wire Line
+	950  1550 1150 1550
+Wire Wire Line
+	950  1650 1150 1650
+Wire Wire Line
+	950  1750 1150 1750
+Wire Wire Line
+	950  1850 1150 1850
 $EndSCHEMATC
