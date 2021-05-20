@@ -733,7 +733,7 @@ U 1 1 60B0022B
 P 2200 5250
 F 0 "SW1" H 2200 5617 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 2200 5526 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles" H 2050 5410 50  0001 C CNN
+F 2 "Keebio-Parts:RotaryEncoder_EC11" H 2050 5410 50  0001 C CNN
 F 3 "~" H 2200 5510 50  0001 C CNN
 	1    2200 5250
 	1    0    0    -1  
@@ -761,6 +761,4 @@ Text Label 2750 4850 0    50   ~ 0
 colRotEnc
 Text Label 2700 2250 0    50   ~ 0
 colRotEnc
-Wire Wire Line
-	2550 2250 2700 2250
 $EndSCHEMATC

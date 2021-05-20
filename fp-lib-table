@@ -3,4 +3,6 @@
   (lib (name random-keyboard-parts)(type KiCad)(uri C:/Users/tyler/Documents/GitHub/keypad-prototype/random-keyboard-parts.pretty)(options "")(descr ""))
   (lib (name keyswitches1U)(type KiCad)(uri ${KIPRJMOD}/keyswitches.pretty1U)(options "")(descr ""))
   (lib (name Rotary_Encoder)(type KiCad)(uri ${KIPRJMOD}/Rotary_Encoder.pretty)(options "")(descr ""))
+  (lib (name Keebio-Parts)(type KiCad)(uri ${KIPRJMOD}/Keebio-Parts.pretty)(options "")(descr ""))
+  (lib (name Display)(type KiCad)(uri ${KIPRJMOD}/Display.pretty)(options "")(descr ""))
 )
