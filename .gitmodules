@@ -16,3 +16,6 @@
 [submodule "keyswitches.pretty1U"]
 	path = keyswitches.pretty1U
 	url = https://github.com/bnbeckwith/keyswitches.pretty
+[submodule "Keebio-Parts.pretty"]
+	path = Keebio-Parts.pretty
+	url = https://github.com/keebio/Keebio-Parts.pretty
