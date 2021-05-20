@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L promicro:ProMicro U1
-U 1 1 61A526B2
-P 1850 1900
-F 0 "U1" H 1850 2937 60  0000 C CNN
-F 1 "ProMicro" H 1850 2831 60  0000 C CNN
-F 2 "promicro:ProMicro" H 1950 850 60  0001 C CNN
-F 3 "" H 1950 850 60  0000 C CNN
-	1    1850 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L MX_Alps_Hybrid:MX-NoLED MX1
 U 1 1 61A559E9
 P 5300 2450
@@ -122,10 +111,8 @@ Wire Wire Line
 	5600 3250 5700 3250
 Wire Wire Line
 	5600 2800 5150 2800
-Connection ~ 5150 2800
 Wire Wire Line
 	5600 3450 5150 3450
-Connection ~ 5150 3450
 Wire Wire Line
 	5450 3050 5450 2400
 Wire Wire Line
@@ -133,10 +120,6 @@ Wire Wire Line
 Connection ~ 5900 2400
 Wire Wire Line
 	5900 2400 5900 1750
-Wire Wire Line
-	4700 3450 5150 3450
-Wire Wire Line
-	4700 2800 5150 2800
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX9
 U 1 1 61AA25A0
@@ -235,7 +218,6 @@ Wire Wire Line
 	5600 4550 5700 4550
 Wire Wire Line
 	5600 4100 5150 4100
-Connection ~ 5150 4100
 Wire Wire Line
 	5600 4750 5150 4750
 Wire Wire Line
@@ -250,8 +232,6 @@ Wire Wire Line
 	5900 3700 5900 3050
 Wire Wire Line
 	4700 4750 5150 4750
-Wire Wire Line
-	4700 4100 5150 4100
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX3
 U 1 1 61AB43A5
@@ -505,20 +485,6 @@ F 3 "" H 2750 1250 50  0001 C CNN
 	1    2750 1250
 	0    -1   -1   0   
 $EndComp
-Text Label 4700 2800 0    50   ~ 0
-row0
-Text Label 4700 3450 0    50   ~ 0
-row1
-Text Label 4700 4100 0    50   ~ 0
-row2
-Text Label 5450 1750 0    50   ~ 0
-col0
-Text Label 5900 1750 0    50   ~ 0
-col1
-Text Label 6350 1750 0    50   ~ 0
-col2
-Text Label 6800 1750 0    50   ~ 0
-col3
 Text Label 900  2250 0    50   ~ 0
 row3
 Text Label 900  2150 0    50   ~ 0
@@ -539,14 +505,6 @@ Text Label 900  1850 0    50   ~ 0
 col0
 Text Label 900  1750 0    50   ~ 0
 col1
-Text Label 900  1650 0    50   ~ 0
-col2
-Text Label 900  1550 0    50   ~ 0
-col3
-Wire Wire Line
-	900  1550 1150 1550
-Wire Wire Line
-	1150 1650 900  1650
 Wire Wire Line
 	900  1750 1150 1750
 Wire Wire Line
@@ -584,8 +542,6 @@ NoConn ~ 2550 1350
 NoConn ~ 2550 1750
 NoConn ~ 2550 1850
 NoConn ~ 2550 1950
-NoConn ~ 2550 2050
-NoConn ~ 2550 2150
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 60AAE5B6
@@ -705,27 +661,46 @@ F 3 "~" V 4700 4650 50  0001 C CNN
 	1    4700 4650
 	0    -1   -1   0   
 $EndComp
+Text Label 4300 4750 0    50   ~ 0
+row3
+Connection ~ 4700 4750
 Wire Wire Line
-	1550 3350 1350 3350
+	4300 4750 4700 4750
 Wire Wire Line
-	1550 3550 1350 3550
-Text Label 1350 3550 0    50   ~ 0
-pinB
-Text Label 1350 3350 0    50   ~ 0
-pinA
-Wire Wire Line
-	1550 3450 1350 3450
+	2550 1450 2700 1450
+Text Label 2700 1450 0    50   ~ 0
+VCC
 $Comp
-L power:GND #PWR0108
-U 1 1 60B4E820
-P 1350 3450
-F 0 "#PWR0108" H 1350 3200 50  0001 C CNN
-F 1 "GND" V 1355 3322 50  0000 R CNN
-F 2 "" H 1350 3450 50  0001 C CNN
-F 3 "" H 1350 3450 50  0001 C CNN
-	1    1350 3450
-	0    1    1    0   
+L kbd:OLED OL1
+U 1 1 60C4879E
+P 2200 4800
+F 0 "OL1" H 2828 4869 51  0000 L CNN
+F 1 "OLED" H 2828 4779 47  0000 L CNN
+F 2 "kbd:OLED_v2" H 2200 4900 60  0001 C CNN
+F 3 "" H 2200 4900 60  0001 C CNN
+	1    2200 4800
+	1    0    0    -1  
 $EndComp
+Text Label 2700 2150 0    50   ~ 0
+col3
+Text Label 2700 2250 0    50   ~ 0
+col2
+Text Label 6800 1750 0    50   ~ 0
+col3
+Text Label 6350 1750 0    50   ~ 0
+col2
+Text Label 5900 1750 0    50   ~ 0
+col1
+Text Label 5450 1750 0    50   ~ 0
+col0
+Wire Wire Line
+	4700 4550 4700 4400
+Wire Wire Line
+	2150 3350 2400 3350
+Text Label 2300 3550 0    50   ~ 0
+rotEnc
+Wire Wire Line
+	2150 3550 2300 3550
 $Comp
 L Device:Rotary_Encoder_Switch SW1
 U 1 1 60B0022B
@@ -737,67 +712,100 @@ F 3 "~" H 1850 3710 50  0001 C CNN
 	1    1850 3450
 	1    0    0    -1  
 $EndComp
-Text Label 4300 4750 0    50   ~ 0
-row3
-Connection ~ 4700 4750
+$Comp
+L power:GND #PWR0108
+U 1 1 60B4E820
+P 1350 3450
+F 0 "#PWR0108" H 1350 3200 50  0001 C CNN
+F 1 "GND" V 1355 3322 50  0000 R CNN
+F 2 "" H 1350 3450 50  0001 C CNN
+F 3 "" H 1350 3450 50  0001 C CNN
+	1    1350 3450
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	4300 4750 4700 4750
+	1550 3450 1350 3450
+Text Label 1350 3350 0    50   ~ 0
+pinA
+Text Label 1350 3550 0    50   ~ 0
+pinB
 Wire Wire Line
-	4700 4550 4700 4400
-Text Label 4850 4400 0    50   ~ 0
-rotEnc
+	1550 3550 1350 3550
 Wire Wire Line
-	4700 4400 4850 4400
-Wire Wire Line
-	2150 3550 2300 3550
-Text Label 2300 3550 0    50   ~ 0
-rotEnc
-Wire Wire Line
-	2150 3350 2400 3350
+	1550 3350 1350 3350
 Wire Wire Line
 	2400 3350 2400 3050
 Text Label 2400 3050 0    50   ~ 0
 colRotEnc
-Text Label 2700 2250 0    50   ~ 0
-colRotEnc
-$Comp
-L SSD1306-128x64_OLED:OLED U2
-U 1 1 60C2E002
-P 1650 4700
-F 0 "U2" H 1928 4804 50  0000 L CNN
-F 1 "OLED" H 1928 4713 50  0000 L CNN
-F 2 "Display:Adafruit_SSD1306" H 1650 4950 50  0001 C CNN
-F 3 "" H 1650 4950 50  0001 C CNN
-	1    1650 4700
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	4700 4400 4850 4400
+Text Label 4850 4400 0    50   ~ 0
+rotEnc
+Text Label 1200 4850 0    50   ~ 0
+VCC
+Wire Wire Line
+	1200 4850 1450 4850
 $Comp
 L power:GND #PWR0109
-U 1 1 60C318F9
-P 2150 4550
-F 0 "#PWR0109" H 2150 4300 50  0001 C CNN
-F 1 "GND" V 2155 4422 50  0000 R CNN
-F 2 "" H 2150 4550 50  0001 C CNN
-F 3 "" H 2150 4550 50  0001 C CNN
-	1    2150 4550
-	0    -1   -1   0   
+U 1 1 60C4BC90
+P 1200 5000
+F 0 "#PWR0109" H 1200 4750 50  0001 C CNN
+F 1 "GND" V 1205 4872 50  0000 R CNN
+F 2 "" H 1200 5000 50  0001 C CNN
+F 3 "" H 1200 5000 50  0001 C CNN
+	1    1200 5000
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2000 4550 2150 4550
+	1450 5000 1200 5000
 Wire Wire Line
-	2550 1450 2700 1450
-Text Label 2700 1450 0    50   ~ 0
-VCC
-Text Label 2250 4650 0    50   ~ 0
-VCC
+	1450 4700 1200 4700
 Wire Wire Line
-	2000 4650 2250 4650
-Text Label 2250 4750 0    50   ~ 0
-SCL
-Text Label 2250 4850 0    50   ~ 0
+	1450 4550 1200 4550
+Text Label 1200 4550 0    50   ~ 0
 SDA
+Text Label 1200 4700 0    50   ~ 0
+SCL
+Connection ~ 5150 4100
+Connection ~ 5150 3450
+Connection ~ 5150 2800
+Text Label 4700 4100 0    50   ~ 0
+row2
+Text Label 4700 3450 0    50   ~ 0
+row1
+Text Label 4700 2800 0    50   ~ 0
+row0
 Wire Wire Line
-	2000 4750 2250 4750
+	4700 4100 5150 4100
 Wire Wire Line
-	2250 4850 2000 4850
+	4700 2800 5150 2800
+Wire Wire Line
+	4700 3450 5150 3450
+Wire Wire Line
+	1150 1550 900  1550
+Wire Wire Line
+	1150 1650 900  1650
+Text Label 900  1650 0    50   ~ 0
+SDA
+Text Label 900  1550 0    50   ~ 0
+SCL
+Wire Wire Line
+	2700 2150 2550 2150
+Wire Wire Line
+	2700 2250 2550 2250
+$Comp
+L promicro:ProMicro U1
+U 1 1 61A526B2
+P 1850 1900
+F 0 "U1" H 1850 2937 60  0000 C CNN
+F 1 "ProMicro" H 1850 2831 60  0000 C CNN
+F 2 "promicro:ProMicro" H 1950 850 60  0001 C CNN
+F 3 "" H 1950 850 60  0000 C CNN
+	1    1850 1900
+	1    0    0    -1  
+$EndComp
+Text Label 2700 2050 0    50   ~ 0
+colRotEnc
+Wire Wire Line
+	2550 2050 2700 2050
 $EndSCHEMATC
