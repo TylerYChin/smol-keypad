@@ -681,18 +681,6 @@ F 3 "" H 2200 4900 60  0001 C CNN
 	1    2200 4800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2550 2050
-$Comp
-L promicro:ProMicro U1
-U 1 1 61A526B2
-P 1850 1900
-F 0 "U1" H 1850 2937 60  0000 C CNN
-F 1 "ProMicro" H 1850 2831 60  0000 C CNN
-F 2 "promicro:ProMicro" H 1950 850 60  0001 C CNN
-F 3 "" H 1950 850 60  0000 C CNN
-	1    1850 1900
-	1    0    0    -1  
-$EndComp
 Text Label 2700 2150 0    50   ~ 0
 col3
 Text Label 2700 2250 0    50   ~ 0
@@ -805,4 +793,19 @@ Wire Wire Line
 	2700 2150 2550 2150
 Wire Wire Line
 	2700 2250 2550 2250
+$Comp
+L promicro:ProMicro U1
+U 1 1 61A526B2
+P 1850 1900
+F 0 "U1" H 1850 2937 60  0000 C CNN
+F 1 "ProMicro" H 1850 2831 60  0000 C CNN
+F 2 "promicro:ProMicro" H 1950 850 60  0001 C CNN
+F 3 "" H 1950 850 60  0000 C CNN
+	1    1850 1900
+	1    0    0    -1  
+$EndComp
+Text Label 2700 2050 0    50   ~ 0
+colRotEnc
+Wire Wire Line
+	2550 2050 2700 2050
 $EndSCHEMATC
